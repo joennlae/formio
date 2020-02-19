@@ -215,6 +215,11 @@ module.exports = (formio) => {
   });
   //our fields
   model.schema.add({
+    publish: {
+      type: Boolean,
+      index: true,
+      default: false
+    },
     diary: {
       type: Boolean,
       index: true,
